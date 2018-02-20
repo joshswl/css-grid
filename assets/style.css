@@ -1,6 +1,8 @@
 /*
   Oh Hello!
+
   These are some base styles so that our tutorial looks good.
+
   Let's go through the important bits real quick
 */
 :root {
@@ -21,7 +23,7 @@
   }
   
   /*
-    WAT IS THIS?!
+    WHAT IS THIS?!
     We inherit box-sizing: border-box; from our <html> selector
     Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
   */
