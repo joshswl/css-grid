@@ -5,130 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/style.css">
-  <title>Starter Files and Tooling Setup!</title>
+  <title>auto-fit and auto-fill!</title>
 </head>
 
 <body>
-
-  <p>Hello!</p>
-
-  <!-- VS Code automatically has Emmet
-
-Example:
-.container>.item*10 -->
-
   <div class="container">
-    <!-- .item.item${$}*30 -->
-    <div class="item item1">1</div>
-    <div class="item item2">2</div>
-    <div class="item item3">3</div>
-    <div class="item item4">4</div>
-    <div class="item item5">5</div>
-    <div class="item item6">6</div>
-    <div class="item item7">7</div>
-    <div class="item poop">💩</div>
-    <div class="item item9">⏰</div>
-    <div class="item item10">10</div>
-    <div class="item item11">11</div>
-    <div class="item item12">12</div>
-    <div class="item item13">13</div>
-    <div class="item item14">14</div>
-    <div class="item item15">15</div>
-    <div class="item item16">16</div>
-    <div class="item item17">17</div>
-    <div class="item item18">18</div>
-    <div class="item item19">19</div>
-    <div class="item item20">20</div>
-    <div class="item item21">21</div>
-    <div class="item item22">22</div>
-    <div class="item item23">23</div>
-    <div class="item item24">24</div>
-    <div class="item item25">25</div>
-    <div class="item item26">26</div>
-    <div class="item item27">27</div>
-    <div class="item item28">28</div>
-    <div class="item item29">29</div>
-    <div class="item item30">30</div>
+    <div class="item item1">Item 01</div>
+    <div class="item item2">Item 02</div>
+    <div class="item item3">Item 03</div>
+    <div class="item item4">Item 04</div>
+    <div class="item item5">Item 05</div>
+    <div class="item item6">Item 06</div>
+    <div class="item item7">Item 07</div>
+    <div class="item item8">Item 08</div>
+    <div class="item item9">Item 09</div>
+    <div class="item item10">Item 10</div>
+    <div class="item item11">Item 11</div>
+    <div class="item item12">Item 12</div>
+    <div class="item item13">Item 13</div>
+    <div class="item item14">Item 14</div>
+    <div class="item item15">Item 15</div>
+    <div class="item item16">Item 16</div>
+    <div class="item item17">Item 17</div>
+    <div class="item item18">Item 18</div>
+    <div class="item item19">Item 19</div>
+    <div class="item item20">Item 20</div>
   </div>
 
   <style>
-    p {
-      font-size: 50px;
-      border-bottom: 10px solid var(--yellow);
-      color: var(--black);
-    }
-
     .container {
       display: grid;
       grid-gap: 20px;
-
-
-      /* sizing grid items */
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-
-      /* repeat function */
-
-      /* grid-template-columns: 100px repeat(2, 1fr auto) 200px repeat(2, 5fr); */
-
-
-      /* sizing tracks */
-      
-      /* height: 600px; */
-      /* border: 10px solid var(--yellow); */
-      /* grid-template-columns: 50% 1fr 1fr 1fr; */
-      /* grid-template-rows: 1fr 10fr 1fr 1fr; */
-      /* grid-template-columns: auto 1fr auto 1fr; */
-
-
-      /* grid-template-columns: 100px auto 500px 50px; */
-      /* grid-template-columns: repeat(5, 100px); */
-
-
-      /* auto-flow */
-
-      /* grid-template-columns: 400px 200px; */
-      /* grid-auto-flow: row; */
-      /* grid-auto-flow: column; */
-      /* grid-auto-columns: 200px; */
-
-
-      /* explicit */
-
-      /* grid-template-columns: 200px 400px; */
-      /* grid-template-rows: 50px 100px; */
-      
-
-      /* implicit */
-
-      /* grid-auto-rows: 300px; */
-    }
-
-    /* sizing grid items */
-    
-    /* .item9 {
-      background: mistyrose;
-      grid-column: span 10;
-      grid-row: span 2;
-    } */
-
-    .poop {
-      background: #BADA55;
-      /* grid-column-start: 2; */
-      /* grid-column-end: 5; */
-      /* grid-column: 2 / 5; */
-
-
-      /* how to take up the entire grid */
-      grid-column: 1 / -1;
-      grid-row: 1 / -1;
-
-      /* this is like width: 100% */
-      /* grid-column: 1 / -1;  */
-
+      border: 10px solid var(--yellow);
+      grid-template-columns: repeat(auto-fill, 150px);
     }
   </style>
-
 </body>
 
 </html>
