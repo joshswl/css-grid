@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+  <title>Starter Files and Tooling Setup!</title>
+</head>
+
+<body>
+
+  <p>Hello!</p>
+
+  <!-- VS Code automatically has Emmet
+
+Example:
+.container>.item*10 -->
+
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+
+  <style>
+    p {
+      font-size: 50px;
+      border-bottom: 10px solid var(--yellow);
+      color: var(--black);
+    }
+
+    .container {
+      display: grid;
+      grid-gap: 20px;
+      /* grid-template-columns: 100px auto 500px 50px; */
+      /* grid-template-columns: repeat(5, 100px); */
+
+      grid-template-columns: 200px 400px;
+      grid-template-rows: 50px 100px;
+    }
+  </style>
+
+</body>
+
+</html>
