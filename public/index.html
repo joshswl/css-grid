@@ -23,9 +23,6 @@ Example:
     <div class="item">3</div>
     <div class="item">4</div>
     <div class="item">5</div>
-    <div class="item">6</div>
-    <div class="item">7</div>
-    <div class="item">8</div>
   </div>
 
   <style>
@@ -41,10 +38,20 @@ Example:
       /* grid-template-columns: 100px auto 500px 50px; */
       /* grid-template-columns: repeat(5, 100px); */
 
-      grid-template-columns: 200px 400px;
-      grid-template-rows: 50px 100px;
 
-      grid-auto-rows: 300px;  
+      /* explicit */
+
+      /* grid-template-columns: 200px 400px;
+      grid-template-rows: 50px 100px; */
+      
+      /* implicit */
+
+      /* grid-auto-rows: 300px;   */
+      
+      grid-template-columns: 400px 200px;
+      /* grid-auto-flow: row; */
+      grid-auto-flow: column;   
+      grid-auto-columns: 200px;
     }
   </style>
 
