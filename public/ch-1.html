@@ -66,6 +66,23 @@ Example:
       /* sizing grid items */
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, 1fr);
+    }
+
+    .poop {
+      background: #BADA55;
+      /* grid-column-start: 2; */
+      /* grid-column-end: 5; */
+      /* grid-column: 2 / 5; */
+
+
+      /* how to take up the entire grid */
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+
+      /* this is like width: 100% */
+      /* grid-column: 1 / -1;  */
+
+    }
 
       /* repeat function */
 
@@ -101,8 +118,8 @@ Example:
 
       /* implicit */
 
-      /* grid-auto-rows: 300px; */
-    }
+      /* grid-auto-rows: 300px;
+    } */
 
     /* sizing grid items */
     
@@ -112,21 +129,6 @@ Example:
       grid-row: span 2;
     } */
 
-    .poop {
-      background: #BADA55;
-      /* grid-column-start: 2; */
-      /* grid-column-end: 5; */
-      /* grid-column: 2 / 5; */
-
-
-      /* how to take up the entire grid */
-      grid-column: 1 / -1;
-      grid-row: 1 / -1;
-
-      /* this is like width: 100% */
-      /* grid-column: 1 / -1;  */
-
-    }
   </style>
 
 </body>
