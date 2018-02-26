@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/style.css">
-  <title>Grid Template Areas</title>
+  <title>Ch. 3: grid template areas, area line names, and naming lines</title>
 </head>
 
 <body>
@@ -62,16 +62,32 @@
       display: grid;
       grid-gap: 20px;
 
-      /* area line names  */
 
-      grid-template-areas:
-        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
-        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
-        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
-        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+      /* NAMING LINES */
+
+      grid-template-columns: [side-bar site-left] 1fr [sidebar-end content-start] 500px [content-end] 1fr [site-right];
+      grid-template-rows: [content-top] repeat(10, auto) [content-bottom];
+    }
 
 
-      /* grid-template-areas  */
+    /* NAMING LINES  */
+
+    .item3 {
+      background: slateblue;
+      grid-column: content-start;
+      grid-row: content-top / content-bottom;
+    }
+
+      /* AREA LINE NAMES  */
+
+      /* grid-template-areas:
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔" */
+
+
+      /* GRID TEMPLATE AREAS  */
 
       /* grid-template-columns: 1fr 10fr 1fr;
       grid-template-rows: 150px 150px 100px;
@@ -81,12 +97,14 @@
         "footer     footer    footer" */
     }
 
-    .item3 {
+    /* AREA LINE NAMES */
+
+    /* .item3 {
       grid-column: 💩-start / 🍔-end;
       grid-row-end: 💩-end;
-    }
+    } */
 
-    /* grid-template-areas */
+    /* GRID TEMPLATE AREAS */
 
     /* .footer {
       grid-area: footer;
