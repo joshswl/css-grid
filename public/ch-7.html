@@ -43,7 +43,7 @@
     }
     .close {
       background: none;
-      color: white;
+      color: black;
       border: 0;
     }
     .gallery {
@@ -129,8 +129,10 @@
     }
     .overlay.open {
       display: grid;
+      align-items: center;
+      justify-items: center;
     }
-    .overlay figure {
+    .overlay-inner {
       background: white;
       width: 700px;
       padding: 20px;
@@ -168,7 +170,7 @@
     }
 
     function close() {
-        overlay.classList.close('open');
+        overlay.classList.remove('open');
     }
 
     const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]);
