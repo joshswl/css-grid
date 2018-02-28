@@ -162,9 +162,13 @@
     }
 
     function handleClick(e) {
-        console.log(e.currentTarget);
         const src = e.currentTarget.querySelector('img').src;
-        console.log(src);
+        overlayImage.src = src;
+        overlay.classList.add('open');
+    }
+
+    function close() {
+        overlay.classList.close('open');
     }
 
     const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]);
