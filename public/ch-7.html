@@ -161,10 +161,21 @@
         return Math.floor(Math.random() * limit) + 1;
     }
 
+    function handleClick(e) {
+        console.log(e.currentTarget);
+        const src = e.currentTarget.querySelector('img').src;
+        console.log(src);
+    }
+
     const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]);
     
     const html = digits.map(generateHTML).join('');
     gallery.innerHTML = html;
+
+    const items = document.querySelectorAll('.item');
+
+    items.forEach(item => item.addEventListener('click', handleClick));
+
   </script>
 </body>
 
